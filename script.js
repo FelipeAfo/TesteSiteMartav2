@@ -75,10 +75,11 @@ pergunta4.onclick = function(){
 
 let hamburguer = document.getElementById("hamburguer")
 let menu = document.getElementById("menu")
+let iconeHamburguer = hamburguer.querySelector("i")
 
 hamburguer.onclick = function(){
 
-    let iconeHamburguer = hamburguer.querySelector("i")
+    
 
     if(menu.classList.contains("menu-aberto")){
         menu.classList.remove("menu-aberto")
@@ -91,6 +92,17 @@ hamburguer.onclick = function(){
         iconeHamburguer.classList.add("fa-xmark")
     }
 }
+
+let linksMenu = menu.querySelectorAll("a")
+linksMenu.forEach(function(link){
+
+    link.onclick = function(){
+        menu.classList.remove("menu-aberto")
+        iconeHamburguer.classList.remove("fa-xmark")
+        iconeHamburguer.classList.add("fa-bars")
+    }
+
+})
 
 let cards = document.querySelectorAll(".animar-esquerda, .animar-direita, .animar-baixo")
 
