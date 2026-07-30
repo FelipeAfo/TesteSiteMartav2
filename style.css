@@ -23,13 +23,20 @@ nav {
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: #fbf0ea;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: transparent;
+    transition: background-color .3s ease;
+
+}
+
+nav.rolando {
+    background-color: #fbf0ea;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
 }
 
 nav ul {
@@ -98,6 +105,23 @@ nav ul li a:hover {
     font-size: 17px;
 }
 
+.redes-nav  {
+    margin-right: 5vw;
+    font-size: 25px;
+    gap: 20px;
+    display: flex;
+}
+
+.redes-nav i{
+    color: #000;
+    transition: 0.3s;
+}
+
+.redes-nav i:hover {
+        transform: scale(1.1);
+
+}
+
 .hamburguer {
     display: none;
 }
@@ -163,9 +187,13 @@ nav ul li a:hover {
 .p-hero {
     font-weight: bold;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     font-size: 17px;
     width: 80%;
+}
+
+.hero a {
+    margin-bottom: 10px;
 }
 
 .hero svg{
@@ -389,7 +417,7 @@ nav ul li a:hover {
 
 .videos-container video {
     border-radius: 50px;
-    height: 700px;
+    height: 600px;
 }
 
 .perguntas-sesion {
@@ -636,7 +664,7 @@ footer i {
     z-index: 10000;
 }
 
-    nav .agendar {
+    .redes-nav {
         display: none;
     }
 
@@ -672,7 +700,7 @@ footer i {
     .hero {
         background-image: none;
         flex-direction: column;
-        padding-top: 30px;
+        padding-top: 0px;
         background-color: #f3dcca;
         height: auto;
 
@@ -1005,7 +1033,7 @@ footer i {
     z-index: 10000;
 }
 
-    nav .agendar {
+    .redes-nav {
         display: none;
     }
 
