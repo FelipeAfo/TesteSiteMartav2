@@ -118,8 +118,7 @@ nav ul li a:hover {
 }
 
 .redes-nav i:hover {
-        transform: scale(1.1);
-
+    transform: scale(1.1);
 }
 
 .hamburguer {
@@ -466,6 +465,10 @@ nav ul li a:hover {
     transition: 0.5s;
     display: flex;
     text-decoration: none;
+}
+
+.button-agenda-2:hover {
+    transform: scale(1.1);
 }
 
 .button-agenda-2 a{
